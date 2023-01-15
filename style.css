@@ -1,3 +1,37 @@
-* {
+html {
+    background-image:url(img/.jpg);
+    background-color: antiquewhite;
     
+}
+main{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "header"
+    "nav"
+    "section"
+    "footer";
+}
+header {
+    grid-area: header;
+    background-size: cover;
+    text-align: center;
+    font-size: 70px;
+    font-style: italic;
+}
+nav{
+    grid-area: nav;
+    background-color: gray;
+}
+nav li{
+    display: inline;
+    padding: 3vw;
+    height: 30px;
+}
+nav li:hover {
+    background-color: slategrey;
 }
