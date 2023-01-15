@@ -1,13 +1,18 @@
 html {
-    background-image:url(img/.jpg);
-    background-color: antiquewhite;
+    background-image:url(img/bck.gif);
+    background-color: silver;
     
 }
+
+body {
+    margin: auto;
+}
 main{
+    color: whitesmoke;
     width: 90%;
     max-width: 900px;
     margin: 0 auto;
-    background-color: gray;
+    background-color: rgb();
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -22,6 +27,7 @@ header {
     text-align: center;
     font-size: 70px;
     font-style: italic;
+    text-decoration: underline;
 }
 nav{
     grid-area: nav;
@@ -30,8 +36,56 @@ nav{
 nav li{
     display: inline;
     padding: 3vw;
-    height: 30px;
+    height: 30pt;
+    text-decoration: none;
 }
 nav li:hover {
     background-color: slategrey;
+    height:fit-content ;
+    width: 30pt;
 }
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #f5efef;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  div img {
+    max-width: 30%;
+  }
+
+.info img {
+    max-width: 20%;
+    max-height: 50%
+}
+.info li {
+    list-style-type: none;
+    text-decoration: none;
+}
+.info li ul{
+    list-style-type: none;
+    text-decoration: none;
+}
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+  a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  footer p{
+    color: whitesmoke;
+  }
